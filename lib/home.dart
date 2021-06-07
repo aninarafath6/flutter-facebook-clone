@@ -2,6 +2,7 @@ import 'package:facebook_clone/sections/roomSection.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
 import 'package:facebook_clone/sections/topButtonSection.dart';
 import 'package:facebook_clone/widgets/appBarButton.dart';
+import 'package:facebook_clone/widgets/navTabs.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -9,7 +10,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'facebook clone',
-        home: Scaffold(
+        home: DefaultTabController(
+          length: 6,
+          child: Scaffold(
             backgroundColor: Colors.white,
             appBar: AppBar(
               backgroundColor: Colors.white,
@@ -35,14 +38,30 @@ class Home extends StatelessWidget {
                   },
                 )
               ],
+              bottom: TabBar(
+                tabs: [
+                  NavTabs(icon: Icons.home, color: Colors.blue),
+                  NavTabs(icon: Icons.group_outlined, color: Colors.grey),
+                  NavTabs(
+                      icon: Icons.ondemand_video_outlined, color: Colors.grey),
+                  NavTabs(icon: Icons.group_outlined, color: Colors.grey),
+                  NavTabs(icon: Icons.notifications, color: Colors.grey),
+                  NavTabs(icon: Icons.menu, color: Colors.grey),
+                ],
+              ),
             ),
-            body: ListView(children: [
-              StatusSection(),
-              Divider(thickness: 1, color: Colors.grey[300]),
-              TopButtonSection(),
-              Divider(thickness: 10, color: Colors.grey[300]),
-              RoomSection(),
-              Divider(thickness: 10, color: Colors.grey[300]),
-            ])));
+            body: ListView(
+              children: [
+                SizedBox(height: 10),
+                StatusSection(),
+                Divider(thickness: 1, color: Colors.grey[300]),
+                TopButtonSection(),
+                Divider(thickness: 10, color: Colors.grey[300]),
+                RoomSection(),
+                Divider(thickness: 10, color: Colors.grey[300]),
+              ],
+            ),
+          ),
+        ));
   }
 }

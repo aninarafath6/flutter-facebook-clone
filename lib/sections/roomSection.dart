@@ -12,8 +12,11 @@ class RoomSection extends StatelessWidget {
         children: [
           OutlinedButton.icon(
             style: ButtonStyle(
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25),
+                  side: BorderSide(color: Colors.blue),
+                ),
               ),
             ),
             onPressed: () {
@@ -27,11 +30,9 @@ class RoomSection extends StatelessWidget {
               'Create a room',
               style: TextStyle(fontWeight: FontWeight.w400),
             ),
-          )
+          ),
         ],
       ),
     );
   }
 }
-
-class StadiumBorde {}
