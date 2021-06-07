@@ -8,6 +8,9 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Widget thinDivider = Divider(thickness: 1, color: Colors.grey[300]);
+    Widget thikDivider = Divider(thickness: 10, color: Colors.grey[300]);
+
     return MaterialApp(
         title: 'facebook clone',
         home: DefaultTabController(
@@ -54,11 +57,11 @@ class Home extends StatelessWidget {
               children: [
                 SizedBox(height: 10),
                 StatusSection(),
-                Divider(thickness: 1, color: Colors.grey[300]),
+                thinDivider,
                 TopButtonSection(),
-                Divider(thickness: 10, color: Colors.grey[300]),
+                thikDivider,
                 RoomSection(),
-                Divider(thickness: 10, color: Colors.grey[300]),
+                thikDivider,
               ],
             ),
           ),

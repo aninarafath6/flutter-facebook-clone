@@ -1,7 +1,10 @@
+import 'package:facebook_clone/assets.dart';
+import 'package:facebook_clone/widgets/avatar.dart';
+import 'package:facebook_clone/widgets/createRoomButton.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class RoomSection extends StatelessWidget {
+  Widget spacing = SizedBox(width: 10);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -10,23 +13,16 @@ class RoomSection extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         padding: EdgeInsets.all(10),
         children: [
-          // ignore: deprecated_member_use
-          FlatButton.icon(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(25.0),
-                side: BorderSide(color: Colors.blue.shade100, width: 1)),
-            label: Text(
-              'Create a room',
-              style: TextStyle(fontWeight: FontWeight.w400, color: Colors.blue),
-            ),
-            onPressed: () {
-              print('create a room clicked');
-            },
-            icon: Icon(
-              Icons.video_call,
-              color: Colors.purple,
-            ),
-          ),
+          createRoomButton(),
+          spacing,
+          Avatar(image: billGates, displayStatus: true),
+          Avatar(image: elonMusk, displayStatus: true),
+          Avatar(image: usefAli, displayStatus: true),
+          Avatar(image: zukkarBurg, displayStatus: true),
+          Avatar(image: nikil, displayStatus: true),
+          Avatar(image: sonu, displayStatus: true),
+          Avatar(image: salman, displayStatus: true),
+          Avatar(image: elonMusk, displayStatus: true),
         ],
       ),
     );

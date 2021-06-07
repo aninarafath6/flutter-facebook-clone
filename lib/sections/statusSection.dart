@@ -1,4 +1,5 @@
 import 'package:facebook_clone/assets.dart';
+import 'package:facebook_clone/widgets/avatar.dart';
 import 'package:flutter/material.dart';
 
 class StatusSection extends StatelessWidget {
@@ -6,14 +7,7 @@ class StatusSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
         tileColor: Colors.white,
-        leading: ClipRRect(
-          borderRadius: BorderRadius.circular(100),
-          child: Image.asset(
-            aninArafath,
-            width: 50,
-            height: 50,
-          ),
-        ),
+        leading: Avatar(image: aninArafath,displayStatus: false,),
         title: TextField(
           decoration: InputDecoration(
               contentPadding: EdgeInsets.only(left: 15),
