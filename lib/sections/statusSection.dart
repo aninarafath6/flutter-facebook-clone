@@ -9,7 +9,7 @@ class StatusSection extends StatelessWidget {
         leading: ClipRRect(
           borderRadius: BorderRadius.circular(100),
           child: Image.asset(
-            billGates,
+            aninArafath,
             width: 50,
             height: 50,
           ),

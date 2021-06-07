@@ -1,4 +1,5 @@
 import 'package:facebook_clone/sections/statusSection.dart';
+import 'package:facebook_clone/sections/topButtonSection.dart';
 import 'package:facebook_clone/widgets/appBarButton.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
         title: 'facebook clone',
         home: Scaffold(
+            backgroundColor: Colors.white,
             appBar: AppBar(
               backgroundColor: Colors.white,
               elevation: 0,
@@ -35,7 +37,10 @@ class Home extends StatelessWidget {
             ),
             body: ListView(children: [
               StatusSection(),
-              Divider(thickness: 1, color: Colors.grey[300])
+              Divider(thickness: 1, color: Colors.grey[300]),
+              TopButtonSection(),
+              Divider(thickness: 10, color: Colors.grey[300]),
+
             ])));
   }
 }
