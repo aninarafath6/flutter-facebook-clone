@@ -1,7 +1,8 @@
 import 'package:facebook_clone/sections/roomSection.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
+import 'package:facebook_clone/sections/storySection.dart';
 import 'package:facebook_clone/sections/topButtonSection.dart';
-import 'package:facebook_clone/widgets/appBarButton.dart';
+import 'package:facebook_clone/widgets/circularButtonIcon.dart';
 import 'package:facebook_clone/widgets/navTabs.dart';
 import 'package:flutter/material.dart';
 
@@ -28,13 +29,13 @@ class Home extends StatelessWidget {
                     fontSize: 24),
               ),
               actions: [
-                AppBarButton(
+                CircularButtonIcon(
                   buttonIcon: Icons.search,
                   buttonAction: () {
                     print('go to search page');
                   },
                 ),
-                AppBarButton(
+                CircularButtonIcon(
                   buttonIcon: Icons.chat,
                   buttonAction: () {
                     print('go to search page');
@@ -61,6 +62,8 @@ class Home extends StatelessWidget {
                 TopButtonSection(),
                 thikDivider,
                 RoomSection(),
+                thikDivider,
+                StorySection(),
                 thikDivider,
               ],
             ),

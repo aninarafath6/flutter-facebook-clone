@@ -7,7 +7,10 @@ class StatusSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
         tileColor: Colors.white,
-        leading: Avatar(image: aninArafath,displayStatus: false,),
+        leading: Avatar(
+          image: elonMusk,
+          displayStatus: false,
+        ),
         title: TextField(
           decoration: InputDecoration(
               contentPadding: EdgeInsets.only(left: 15),
