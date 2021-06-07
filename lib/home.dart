@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
                   NavTabs(icon: Icons.group_outlined, color: Colors.grey),
                   NavTabs(
                       icon: Icons.ondemand_video_outlined, color: Colors.grey),
-                  NavTabs(icon: Icons.group_outlined, color: Colors.grey),
+                  NavTabs(icon: Icons.groups_outlined, color: Colors.grey),
                   NavTabs(icon: Icons.notifications, color: Colors.grey),
                   NavTabs(icon: Icons.menu, color: Colors.grey),
                 ],

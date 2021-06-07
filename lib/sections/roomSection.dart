@@ -10,14 +10,14 @@ class RoomSection extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         padding: EdgeInsets.all(10),
         children: [
-          OutlinedButton.icon(
-            style: ButtonStyle(
-              shape: MaterialStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25),
-                  side: BorderSide(color: Colors.blue),
-                ),
-              ),
+          // ignore: deprecated_member_use
+          FlatButton.icon(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0),
+                side: BorderSide(color: Colors.blue.shade100, width: 1)),
+            label: Text(
+              'Create a room',
+              style: TextStyle(fontWeight: FontWeight.w400, color: Colors.blue),
             ),
             onPressed: () {
               print('create a room clicked');
@@ -25,10 +25,6 @@ class RoomSection extends StatelessWidget {
             icon: Icon(
               Icons.video_call,
               color: Colors.purple,
-            ),
-            label: Text(
-              'Create a room',
-              style: TextStyle(fontWeight: FontWeight.w400),
             ),
           ),
         ],
