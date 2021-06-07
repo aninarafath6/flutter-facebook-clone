@@ -15,6 +15,10 @@ class TopButtonSection extends StatelessWidget {
     );
   }
 
+  Widget verticalDivider = VerticalDivider(
+    color: Colors.grey[300],
+    thickness: 1,
+  );
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,10 +33,7 @@ class TopButtonSection extends StatelessWidget {
               onPressed: () {
                 print('live button pressed');
               }),
-          VerticalDivider(
-            color: Colors.grey[300],
-            thickness: 1,
-          ),
+          verticalDivider,
           topButton(
               title: 'photos',
               icon: Icons.perm_media,
@@ -40,10 +41,7 @@ class TopButtonSection extends StatelessWidget {
               onPressed: () {
                 print('photos button pressed');
               }),
-          VerticalDivider(
-            color: Colors.grey[300],
-            thickness: 1,
-          ),
+          verticalDivider,
           topButton(
               title: 'reels',
               icon: Icons.video_collection,

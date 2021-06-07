@@ -1,3 +1,4 @@
+import 'package:facebook_clone/sections/roomSection.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
 import 'package:facebook_clone/sections/topButtonSection.dart';
 import 'package:facebook_clone/widgets/appBarButton.dart';
@@ -40,7 +41,8 @@ class Home extends StatelessWidget {
               Divider(thickness: 1, color: Colors.grey[300]),
               TopButtonSection(),
               Divider(thickness: 10, color: Colors.grey[300]),
-
+              RoomSection(),
+              Divider(thickness: 10, color: Colors.grey[300]),
             ])));
   }
 }

@@ -16,11 +16,10 @@ class StatusSection extends StatelessWidget {
         ),
         title: TextField(
           decoration: InputDecoration(
-              enabledBorder: InputBorder.none,
-              disabledBorder: InputBorder.none,
-              errorBorder: InputBorder.none,
-              focusedBorder: InputBorder.none,
-              hintText: "what's on your maint?",
+              contentPadding: EdgeInsets.only(left: 10),
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
+              hintText: "Write something here...",
               hintStyle: TextStyle(color: Colors.black)),
         ));
   }
