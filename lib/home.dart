@@ -1,9 +1,11 @@
+import 'package:facebook_clone/assets.dart';
 import 'package:facebook_clone/sections/roomSection.dart';
 import 'package:facebook_clone/sections/statusSection.dart';
 import 'package:facebook_clone/sections/storySection.dart';
 import 'package:facebook_clone/sections/topButtonSection.dart';
 import 'package:facebook_clone/widgets/circularButtonIcon.dart';
 import 'package:facebook_clone/widgets/navTabs.dart';
+import 'package:facebook_clone/widgets/postCard.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -65,6 +67,7 @@ class Home extends StatelessWidget {
                 thikDivider,
                 StorySection(),
                 thikDivider,
+                PostCard(avatar: usefAli, name: 'Usef Ali', publishedAt: '5h'),
               ],
             ),
           ),
