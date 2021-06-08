@@ -4,11 +4,13 @@ class Avatar extends StatelessWidget {
   final String image;
   final bool displayStatus;
   final bool displayBorder;
+  final double size;
 
   Avatar({
     required this.image,
     this.displayStatus: true,
     this.displayBorder: false,
+    this.size: 50,
   });
   @override
   Widget build(BuildContext context) {
@@ -26,8 +28,10 @@ class Avatar extends StatelessWidget {
             child: Image.asset(
               image,
               fit: BoxFit.cover,
-              width: 50,
-              height: 50,
+              // ignore: unnecessary_null_comparison
+              width: size != null ? size : 50,
+              // ignore: unnecessary_null_comparison
+              height: size != null ? size : 50,
             ),
           ),
         ),

@@ -15,6 +15,7 @@ class Home extends StatelessWidget {
     Widget thikDivider = Divider(thickness: 10, color: Colors.grey[300]);
 
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'facebook clone',
         home: DefaultTabController(
           length: 6,
@@ -67,7 +68,16 @@ class Home extends StatelessWidget {
                 thikDivider,
                 StorySection(),
                 thikDivider,
-                PostCard(avatar: usefAli, name: 'Usef Ali', publishedAt: '5h'),
+                PostCard(
+                    avatar: aninArafath,
+                    name: 'Anin Arafath',
+                    publishedAt: '5h',
+                    postImage: childrensday,
+                    postTitle: 'Happy Childrens Day!!!',
+                    commentCount: '2k',
+                    likeCount: '13k',
+                    shareCount: '1k'),
+                thikDivider,
               ],
             ),
           ),

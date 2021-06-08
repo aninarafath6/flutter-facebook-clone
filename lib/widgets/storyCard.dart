@@ -48,6 +48,7 @@ class StoryCard extends StatelessWidget {
                       image: avatar,
                       displayStatus: false,
                       displayBorder: true,
+                      size: 40,
                     ),
             ),
             Positioned(

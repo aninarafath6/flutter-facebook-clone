@@ -9,6 +9,7 @@ class StorySection extends StatelessWidget {
       height: 250,
       child: ListView(
         scrollDirection: Axis.horizontal,
+        physics: BouncingScrollPhysics(),
         children: [
           StoryCard(
             labelText: 'Add To Story',

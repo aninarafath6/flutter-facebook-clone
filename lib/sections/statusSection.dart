@@ -16,6 +16,7 @@ class StatusSection extends StatelessWidget {
               contentPadding: EdgeInsets.only(left: 15),
               focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.blue.shade100, width: 1.0),
+                borderRadius: BorderRadius.circular(25.0),
               ),
               enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.grey.shade400, width: 1.0),

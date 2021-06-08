@@ -11,6 +11,7 @@ class RoomSection extends StatelessWidget {
       height: 70,
       child: ListView(
         scrollDirection: Axis.horizontal,
+        physics: BouncingScrollPhysics(),
         padding: EdgeInsets.all(10),
         children: [
           createRoomButton(),
